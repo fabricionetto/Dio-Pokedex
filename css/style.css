@@ -12,6 +12,15 @@
     display: flex;
 }
 
+@media screen and (min-width: 992px) {
+    .container{
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }  
+}
+
 .pokedex-grid{
     width: 300px;
     height: 550px;
@@ -21,6 +30,12 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 230px 50px 80px 80px 100px ;
+}
+
+@media screen and (min-width: 380px) {
+    .pokedex-grid{
+    grid-template-columns: 1fr;
+    }
 }
 
 .item-um-cabecalho{
@@ -50,6 +65,25 @@
     gap: 10px;
 }
 
+.normal {background-color: #a6a877;} 
+.grass{background-color: #77c85e;}  
+.fire {background-color: #ee7f30;} 
+.water {background-color:#678fee;} 
+.electric{background-color: #f7cf2e;} 
+.ice {background-color: #98d5d7;} 
+.ground {background-color:  #dfbf69;}
+.flying {background-color: #a98ff5;} 
+.poison {background-color: #a040a0;} 
+.fighting {background-color: #bf3029;} 
+.psychic {background-color:#f65687;} 
+.dark {background-color: #725847;} 
+.rock {background-color: #b8a137;} 
+.bug {background-color: #a8b720;} 
+.ghost {background-color: #6e5896;} 
+.steel {background-color: #b9b7cf;} 
+.dragon {background-color: #6f38f6;} 
+.fairy {background-color: #f9aec7;} 
+
 .item-dois-tipos .tipos li{
     color: #000;
     padding: .25rem .5rem;
@@ -58,7 +92,6 @@
     border-radius: 1rem;
     filter: brightness(1.1);
     text-transform: capitalize;
-    background-color: aquamarine;
 }
 
 .item-tres{
@@ -76,7 +109,7 @@
 .item-quatro ol{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin: auto;
 }
 
@@ -88,7 +121,6 @@
     border-radius: 1rem;
     filter: brightness(1.1);
     text-transform: capitalize;
-    background-color: aquamarine;
 }
 
 .item-cinco{
@@ -107,8 +139,8 @@
 }
 
 .item-cinco ol li{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: #aee09f;;
     border-radius: 50%;
     display: flex;
@@ -123,7 +155,8 @@
     justify-content: center;
     align-items: center;
 }
+
 .item-cinco ol li img{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }

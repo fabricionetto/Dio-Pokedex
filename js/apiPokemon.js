@@ -1,11 +1,25 @@
 
 apiPokemon = {}
 
+function converterPokemonDetalhadosToObjJson(pokemonDetalhes){
+
+    const pokemon = new Pokemon()
+    
+    pokemon.name = pokemonDetalhes.name
+    const tipos = pokemonDetalhes.types.map((tipo)=> tipo.type.name)
+    const [tipo] = tipos
+    pokemon.types = tipos
+    pokemon.type = tipo
+    pokemon.photo = pokemonDetalhes.sprites.other.dream_world.front_default
+
+    return pokemon
+}
+
 apiPokemon.getDetalhesPokemon = (arrayPokemon) => {
 
     return fetch(arrayPokemon.url)
     .then((response) => response.json())
-    .then((pokemonDetalhados) => pokemonDetalhados)
+    .then((converterPokemonDetalhadosToObjJson))
 }
 
 apiPokemon.getPokemon = (offset=0, limit=1) => {

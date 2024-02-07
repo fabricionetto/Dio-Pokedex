@@ -4,13 +4,12 @@
 function convertpokemonJsonToHtml(objPokemon){
     return `<section class="pokedex-grid">
     <header class="item-um-cabecalho">
-       <img src="${objPokemon.sprites.other.dream_world.front_default}" alt="">
+       <img src="${objPokemon.photo}" alt="">
     </header>
     <section class="item-dois-tipos" >
        <h2>${objPokemon.name}</h2>
        <ol class="tipos">
-           <li class="tipo">Grass</li>
-           <li class="tipo">Poison</li>
+           ${objPokemon.types.map((tipos) => `<li class="tipo ${tipos}">${tipos}</li>`).join('')}
        </ol>
     </section>
     <section class="item-tres">
@@ -19,7 +18,7 @@ function convertpokemonJsonToHtml(objPokemon){
        </p>
     </section>
    <section class="item-quatro">
-       <h2>Fraqueza</h2>
+       <h2>Fraquezas</h2>
        <ol>
            <li class="fire">fire</li>
            <li class="ice">ice</li>
