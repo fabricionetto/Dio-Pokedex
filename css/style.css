@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(149, 230, 201);
+    display: flex;
+}
+
+.pokedex-grid{
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 230px 50px 80px 80px 100px ;
+}
+
+.item-um-cabecalho{
+    width: 100%;
+    height: 230px;
+    background-color: #d0f6f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.item-um-cabecalho img{
+    height: 70%;
+    width: 70%;
+}
+
+.item-dois-tipos{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    align-items: center;
+}
+
+.item-dois-tipos .tipos{
+    display: flex;
+    gap: 10px;
+}
+
+.item-dois-tipos .tipos li{
+    color: #000;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 1em;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-transform: capitalize;
+    background-color: aquamarine;
+}
+
+.item-tres{
+    text-align: left;
+    margin: 0 10px 0 10px;
+}
+
+.item-quatro{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+    justify-content: left;
+}
+
+.item-quatro ol{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.item-quatro ol li{
+    color: #000;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 1em;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-transform: capitalize;
+    background-color: aquamarine;
+}
+
+.item-cinco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+}
+
+.item-cinco ol{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-cinco ol li{
+    height: 50px;
+    width: 50px;
+    background-color: #aee09f;;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(1.3);
+    text-transform: capitalize;
+}
+
+.item-cinco .seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-cinco ol li img{
+    height: 30px;
+    width: 30px;
+}
